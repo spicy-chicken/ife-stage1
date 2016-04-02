@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>ife任务1-2</title>
+    <link rel="stylesheet" href="default.css">
 </head>
 <body>
 <header>
-    <h1>我是网站一级标题</h1>
-    <nav>
-        <ul>
-            <li><a href="#first_article">第一篇文章</a></li>
-            <li><a href="#second_article">第二篇文章</a></li>
-            <li><a href="#third_article">第三篇文章</a></li>
-        </ul>
-    </nav>
+    <div class="header">
+        <div class="logo"><img src="baidu_logo.png" width="100px" height="50px" /></div>
+        <nav>
+            <ul class="nav">
+                <li><a href="#first_article">第一篇文章</a></li>
+                <li><a href="#second_article">第二篇文章</a></li>
+                <li><a href="#third_article">第三篇文章</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
+<div class="container">
 <article id="first_article">
     <h2 id="first_title">我是文章一级标题</h2>
     <h3>我是文章二级标题</h3>
-    <p>
-        <span>文章作者</span>
-        <span>文章发表时间</span>
-    </p>
+
+    <span>文章作者</span>
+    <span>文章发表时间</span>
+
     <p>
         这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,
         这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,
@@ -49,10 +53,8 @@
 <article id="second_article">
     <h2 id="second_title">另一篇文章一级标题</h2>
     <h3>文章二级标题</h3>
-    <p>
-        <span>文章作者</span>
-        <span>文章发表时间</span>
-    </p>
+    <span>文章作者</span>
+    <span>文章发表时间</span>
     <p>
         这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,
         这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,
@@ -74,21 +76,21 @@
         <li>列表项目二</li>
         <li>列表项目三</li>
     </ul>
+</article>
+<article id="picture">
     <h3>图片</h3>
     <ul style="list-style-type: none">
-        <li><p>好看的图片</p><img src="China.png" alt="China" /></li>
-        <li><p>好看的图片</p><img src="China.png" alt="China" /></li>
-        <li><p>好看的图片</p><img src="China.png" alt="China" /></li>
-        <li><p>好看的图片</p><img src="China.png" alt="China" /></li>
+        <li class="pic"><p>好看的图片</p><img src="China.png" alt="China" /></li>
+        <li class="pic"><p>好看的图片</p><img src="China.png" alt="China" /></li>
+        <li class="pic"><p>好看的图片</p><img src="China.png" alt="China" /></li>
+        <li class="pic"><p>好看的图片</p><img src="China.png" alt="China" /></li>
     </ul>
 </article>
 <article id="third_article">
     <h2>最后一篇文章一级标题</h2>
     <h3>文章二级标题</h3>
-    <p>
-        <span>文章作者</span>
-        <span>文章发表时间</span>
-    </p>
+    <span>文章作者</span>
+    <span>文章发表时间</span>
     <ol>
         <li>排名1</li>
         <li>排名2</li>
@@ -104,13 +106,15 @@
         <tr><td>表内容单元格</td><td>表内容单元格</td><td><a href="#">操作</a></td></tr>
         <tr><td>表内容单元格</td><td>表内容单元格</td><td><a href="#">操作</a></td></tr>
         <tr><td>表内容单元格</td><td>表内容单元格</td><td><a href="#">操作</a></td></tr>
-        <tr><td>总计</td><td colspan="2">1000</td> </tr>
         </tbody>
+        <tfoot>
+        <tr><td>总计</td><td colspan="2">1000</td> </tr>
+        </tfoot>
     </table>
 </article>
 <aside>
+<article>
     <h2>这里以后是一个侧栏,这是侧栏的标题</h2>
-    <h2>侧栏注册窗口标题</h2>
     <form method="post">
         <label for="email_input">请输入邮箱地址:</label>
         <input type="text" id="email_input" name="email" placeholder="这是一个文本输入框" />
@@ -140,7 +144,9 @@
         <button type="submit">确认提交</button>
 
     </form>
+</article>
 </aside>
+</div>
 <footer>
     <span><b>版权所有&copy;By 香辣鸡腿饭·陈乐天</b></span>
 </footer>

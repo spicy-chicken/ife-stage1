@@ -1,0 +1,204 @@
+/* Global Definition */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+        font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+/* header */
+div.header {
+    background-color: black;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    width: 100px;
+}
+
+header nav {
+    float: right;
+    overflow: hidden;
+}
+
+ul.nav {
+    vertical-align: baseline;
+    margin-top: 15px;
+}
+
+ul.nav li {
+    float: left;
+    padding-left: 5px;
+    color: white;
+    list-style: none;
+}
+
+ul.nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.nav li a:visited {
+    color: #999999;
+}
+
+/*  Main  */
+body {
+    font-family: '微软雅黑', serif;
+    background-color: #dedede;
+}
+
+.container {
+    padding: 20px;
+}
+
+article {
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px  #999;
+}
+
+article h2 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+article h3 {
+    margin: 5px 0;
+}
+
+article span {
+    color: grey;
+}
+
+article p {
+    text-indent: 2em;
+}
+
+article ul {
+    list-style: none;
+}
+
+article ul li.pic {
+    border: solid 1px;
+    display: list-item;
+    margin-right: inherit;
+    width: 230px;
+}
+
+article li.pic img {
+    width: 200px;
+    text-align: center;
+}
+
+article li.pic p {
+    text-align: center;
+    text-indent: 0;
+}
+
+article ol {
+    margin: 30px;
+}
+
+article table {
+    width: 100%;
+    border: solid 1px grey;
+}
+
+article table thead {
+    background-color: black;
+}
+
+article table th {
+    color: white;
+    border: solid 1px grey;
+}
+
+article table tfoot {
+    background-color: grey;
+}
+
+aside h2 {
+    border-left: 4px solid #ccc;
+}
+
+aside form {
+    width: 80%;
+}
+
+aside form button {
+    width: 100%;
+    color: white;
+    background-color: blue;
+    border: none;
+}
+
+footer {
+    height: 40px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
